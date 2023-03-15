@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jugar LoL</title>
+</head>
+<body>
+
+  <h1>Hola Rafael, ¿quieres jugar League of Legends conmigo?</h1>
+  <p>Ingresa 's' para aceptar o 'n' para rechazar.</p>
+
+  <input type="text" id="respuesta">
+  <button onclick="procesarRespuesta()">Enviar</button>
+
+  <script>
+    
+    function procesarRespuesta() {
+      var respuesta = document.getElementById("respuesta").value;
+
+      if (respuesta.toLowerCase() === "s") {
+        alert("¡Genial! ¡Preparémonos para la victoria!");
+      } else if (respuesta.toLowerCase() === "n") {
+        alert("¡Qué lástima! Quizás en otra ocasión.");
+      } else {
+        alert("No ingresaste una respuesta válida. Por favor, ingresa 's' o 'n'.");
+      }
+    }
+  </script>
+</body>
+</html>
